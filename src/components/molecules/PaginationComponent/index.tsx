@@ -1,4 +1,4 @@
-import { Img, Text, Button } from "./..";
+import { Img, Text, Button } from "./../..";
 import React from "react";
 
 interface Props {
