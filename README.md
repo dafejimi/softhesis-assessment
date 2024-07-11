@@ -1,5 +1,3 @@
-
-
 # Softhesis README
 
 ## Overview
@@ -23,6 +21,51 @@ To simulate backend interactions and test application functionality without a li
 - **Form Validation**: Utilized form validation to enhance user experience and ensure data integrity.
   
 - **CSS-in-JS**: Leveraged [Library Name] for styling to maintain component-specific styles and improve CSS management.
+
+## Atomic Design Component Breakdown
+
+### Atoms
+- **Button**: A basic button component used throughout the application.
+- **Img**: A simple image component for displaying images.
+- **Input**: An input field component for user inputs.
+- **Heading**: A heading component for titles and headings.
+- **Text**: A text component for paragraphs and other text elements.
+
+### Molecules
+- **ContextMenu**: A contextual menu component that displays additional options.
+- **UserProfile**: A component displaying user profile information.
+- **SelectBox**: A dropdown select box component for selecting options.
+
+### Organisms
+- **Header/Navbar**: The header or navigation bar component.
+- **Table**: A table component for displaying tabular data.
+- **Sidebar**: A sidebar component for navigation and additional options.
+
+## Routes
+
+### /login
+
+- **Description**: The login page allows users to authenticate by providing their credentials.
+- **Features**:
+  - User authentication form with validation.
+  - Error messages for incorrect login attempts.
+  - Redirect to the dashboard upon successful login.
+
+### /userdetails
+
+- **Description**: The user details page displays information about the logged-in user.
+- **Features**:
+  - Displays user profile information.
+  - Allows users to update their profile details.
+  - Fetches and updates user data from the Redux store.
+
+### /dashboard
+
+- **Description**: The dashboard page serves as the main landing page after login.
+- **Features**:
+  - Overview of user-specific data and activities.
+  - Navigation links to other parts of the application.
+  - Interactive components like tables and charts displaying relevant information.
 
 ## Getting Started
 
@@ -59,19 +102,3 @@ Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 
 - `npm run build`: Build the production-ready application.
 - `npm run start`: Start the production server (after building).
-
-### Project Structure
-
-Brief description of the project structure and key directories/files.
-
-## Contributing
-
-Guidelines for contributing to the project if applicable.
-
-## License
-
-This project is licensed under the [License Name] - see the LICENSE.md file for details.
-
----
-
-Adjust the placeholders like `[Project Name]`, `[Library Name]`, `[License Name]`, and `[http://localhost:3000](http://localhost:3000)` with your actual project details. This README.md template provides a structured approach to documenting your setup decisions and guiding others on how to run and contribute to your Next.js application.
