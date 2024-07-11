@@ -1,0 +1,40 @@
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        amber: { 600: "#e9b200", "600_19": "#e9b20019" },
+        black: { "900_0a": "#0000000a", "900_cc": "#000000cc" },
+        blue_gray: {
+          600: "#545f7d",
+          "600_0f": "#545f7d0f",
+          "600_26": "#545f7d26",
+          "600_33": "#545f7d33",
+          "600_99": "#545f7d99",
+          "600_b2": "#545f7db2",
+        },
+        cyan: { 400: "#39cdcc", "400_0f": "#39cdcc0f" },
+        deep_purple: { a400: "#5718ff" },
+        gray: { 50: "#fbfbfb" },
+        green: { 500: "#39cd62", "500_0f": "#39cd620f" },
+        indigo: {
+          800: "#213f7d",
+          "800_0f": "#213f7d0f",
+          "800_19": "#213f7d19",
+          "800_28": "#213f7d28",
+          "800_33": "#213f7d33",
+        },
+        pink: { a200: "#ff3366", a400: "#e4033b" },
+        purple: { a400: "#de17ff" },
+        red: { 400: "#f55f44" },
+        white: { a700: "#ffffff", a700_33: "#ffffff33" },
+      },
+      boxShadow: { xs: "3px 0 20px 0 #0000000a", sm: "3px 5px 20px 0 #0000000a", md: "0 5px 20px 0 #0000000a" },
+      fontFamily: { worksans: "Work Sans", roboto: "Roboto", sfcompacttext: "SF Compact Text" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
