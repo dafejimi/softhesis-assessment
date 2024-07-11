@@ -1,6 +1,6 @@
 "use client";
 
-import { Text, Img } from "./..";
+import { Text, Img } from "./../..";
 import React from "react";
 import { MenuItem, Menu, Sidebar, sidebarClasses } from "react-pro-sidebar";
 
